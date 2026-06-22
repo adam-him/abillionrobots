@@ -1,0 +1,11 @@
+{
+  "week": null,
+  "rollup": null,
+  "entries": [],
+  "confirmations": {
+    "ethan": false,
+    "erik": false,
+    "raymond": false
+  },
+  "published": false
+}
