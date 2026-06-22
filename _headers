@@ -1,0 +1,7 @@
+/changelog.json
+  Content-Type: application/json
+  Cache-Control: no-cache
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff

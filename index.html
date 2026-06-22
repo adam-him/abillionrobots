@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Towards 1B Robots</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,300..500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  ::selection{background:#8a2218;color:#f6f2e9;}
+  a{color:inherit;text-decoration:none;}
+  body{background:#f3eee3;color:#1c1a16;font-family:'Newsreader',Georgia,serif;min-height:100vh;font-synthesis:none;}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(243,238,227,0.86);backdrop-filter:blur(8px);border-bottom:1px solid #d8d1c2;}
+  .nav-inner{max-width:1080px;margin:0 auto;padding:16px 32px;display:flex;align-items:baseline;justify-content:space-between;gap:24px;}
+  .nav-brand{font-size:17px;letter-spacing:0.02em;font-weight:500;}
+  nav{display:flex;align-items:baseline;gap:28px;font-size:13.5px;letter-spacing:0.08em;text-transform:uppercase;color:#6b655a;}
+  nav a:hover{color:#1c1a16;}
+  nav a.active{color:#1c1a16;}
+
+  .hero{max-width:1080px;margin:0 auto;padding:96px 32px 72px;}
+  .hero-inner{max-width:760px;}
+  .eyebrow{font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:#8a2218;margin-bottom:34px;}
+  h1{font-size:84px;line-height:0.98;font-weight:300;letter-spacing:-0.02em;margin:0 0 36px;}
+  .hero-sub{font-size:25px;line-height:1.42;font-weight:300;color:#2c2820;margin:0 0 40px;max-width:680px;}
+  .hero-authors{display:flex;align-items:baseline;gap:28px;flex-wrap:wrap;font-size:16px;color:#6b655a;}
+  .hero-cta{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;}
+  .btn-primary{display:inline-block;background:#1c1a16;color:#f3eee3;padding:13px 26px;font-size:15.5px;letter-spacing:0.02em;border-radius:1px;}
+  .btn-primary:hover{background:#2c2820;}
+  .btn-secondary{display:inline-block;border:1px solid #d8d1c2;color:#6b655a;padding:13px 26px;font-size:15.5px;letter-spacing:0.02em;border-radius:1px;}
+  .btn-secondary:hover{border-color:#1c1a16;color:#1c1a16;}
+
+  .abstract{border-top:1px solid #d8d1c2;border-bottom:1px solid #d8d1c2;background:#f7f3ea;}
+  .abstract-inner{max-width:1080px;margin:0 auto;padding:64px 32px;display:grid;grid-template-columns:200px 1fr;gap:48px;}
+  .abstract-label{font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#8a2218;padding-top:8px;}
+  .abstract-body{max-width:680px;}
+  .abstract-body p{font-size:21px;line-height:1.6;font-weight:300;margin:0 0 22px;}
+  .abstract-body p:last-child{margin:0;}
+
+  footer{border-top:1px solid #d8d1c2;background:#1c1a16;color:#e9e2d2;}
+  .footer-inner{max-width:1080px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .footer-title{font-size:20px;font-weight:300;}
+  .footer-meta{font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#8f8773;}
+  .footer-meta a{color:#e9e2d2;}
+
+  @media(max-width:700px){
+    h1{font-size:52px;}
+    .abstract-inner{grid-template-columns:1fr;}
+    nav{gap:16px;}
+    .hero{padding:64px 20px 48px;}
+    .abstract-inner{padding:40px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Towards&nbsp;1B&nbsp;Robots</a>
+    <nav>
+      <a href="/updates" class="active">Updates</a>
+      <a href="/updates">The Changelog</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">An Evolving Thesis&nbsp;&nbsp;·&nbsp;&nbsp;v1.0&nbsp;&nbsp;·&nbsp;&nbsp;June 2026</div>
+    <h1>Towards 1&nbsp;Billion Robots</h1>
+    <p class="hero-sub">The world will build its first billion general-purpose robots before 2030. This is a living record of what we learn as we help build it — week by week, from the ground up.</p>
+    <div class="hero-authors">
+      <span>By <span style="color:#1c1a16;">Ethan Aldrich</span>, <span style="color:#1c1a16;">Erikson Kuebler</span> &amp; <span style="color:#1c1a16;">Raymond Xu</span></span>
+    </div>
+    <div class="hero-cta">
+      <a href="/updates" class="btn-primary">Read the updates ↓</a>
+    </div>
+  </div>
+</section>
+
+<section class="abstract">
+  <div class="abstract-inner">
+    <div class="abstract-label">The thesis,<br>in brief</div>
+    <div class="abstract-body">
+      <p>Robots are about to follow the same curve software did — only this time the marginal unit is physical labor, and the addressable market is the entire economy. The bottleneck was never imagination; it was capability, cost, and capital. All three are breaking at once.</p>
+      <p style="color:#2c2820;">We think the count of deployed, economically-useful robots crosses one billion within four years — before 2030. Getting there is not one story but a dozen — industrial, logistics, the home, agriculture, healthcare, defense — each with its own unlock, its own buyer, its own decade.</p>
+      <p style="color:#2c2820;">This is our attempt to track all of them honestly, hold ourselves to predictions, and update in public as the picture sharpens. We are not bystanders to this — we invest in it and we build it.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-title">Towards 1B Robots</div>
+    <div class="footer-meta">Updated weekly &nbsp;·&nbsp; <a href="/updates">See the changelog</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

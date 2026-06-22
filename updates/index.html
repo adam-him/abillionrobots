@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updates — Towards 1B Robots</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,300..500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  ::selection{background:#8a2218;color:#f6f2e9;}
+  a{color:inherit;text-decoration:none;}
+  body{background:#f3eee3;color:#1c1a16;font-family:'Newsreader',Georgia,serif;min-height:100vh;font-synthesis:none;}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(243,238,227,0.86);backdrop-filter:blur(8px);border-bottom:1px solid #d8d1c2;}
+  .nav-inner{max-width:1080px;margin:0 auto;padding:16px 32px;display:flex;align-items:baseline;justify-content:space-between;gap:24px;}
+  .nav-brand{font-size:17px;letter-spacing:0.02em;font-weight:500;}
+  nav{display:flex;align-items:baseline;gap:28px;font-size:13.5px;letter-spacing:0.08em;text-transform:uppercase;color:#6b655a;}
+  nav a:hover{color:#1c1a16;}
+  nav a.active{color:#1c1a16;}
+
+  .hero{max-width:1080px;margin:0 auto;padding:80px 32px 40px;}
+  .hero-inner{max-width:760px;}
+  .eyebrow{font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:#8a2218;margin-bottom:24px;}
+  h1{font-size:64px;line-height:1.02;font-weight:300;letter-spacing:-0.02em;margin:0 0 26px;}
+  .hero-sub{font-size:22px;line-height:1.5;font-weight:300;color:#2c2820;margin:0;}
+
+  .timeline-wrap{max-width:1080px;margin:0 auto;padding:24px 32px 96px;}
+  .month-group{display:grid;grid-template-columns:200px 1fr;gap:48px;margin-bottom:0;}
+  .month-group + .month-group{margin-top:8px;}
+  .month-label-col{position:relative;}
+  .month-label{position:sticky;top:88px;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:#8a2218;}
+  .entries{border-left:1px solid #d8d1c2;padding-left:36px;}
+  .entry{position:relative;padding-bottom:40px;}
+  .entry:last-child{padding-bottom:0;}
+  .dot{position:absolute;left:-42px;top:7px;width:9px;height:9px;border-radius:50%;}
+  .dot-red{background:#8a2218;}
+  .dot-tan{background:#c8b9a0;}
+  .dot-dark{background:#1c1a16;}
+  .entry-meta{display:flex;align-items:baseline;gap:14px;margin-bottom:10px;}
+  .entry-date{font-size:13.5px;letter-spacing:0.08em;text-transform:uppercase;color:#9a9384;}
+  .entry-author{font-size:13px;color:#1c1a16;}
+  .entry-badge{font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;color:#1c1a16;border:1px solid #1c1a16;border-radius:999px;padding:2px 10px;}
+  .entry-body{margin:0;font-size:20px;line-height:1.55;font-weight:300;}
+
+  .empty-state{padding:64px 0;color:#9a9384;}
+  .empty-state p{font-size:20px;font-weight:300;line-height:1.5;margin:0;}
+
+  footer{border-top:1px solid #d8d1c2;background:#1c1a16;color:#e9e2d2;}
+  .footer-inner{max-width:1080px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .footer-title{font-size:20px;font-weight:300;}
+  .footer-meta{font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#8f8773;}
+  .footer-meta a{color:#e9e2d2;}
+
+  @media(max-width:700px){
+    h1{font-size:44px;}
+    .month-group{grid-template-columns:1fr;}
+    .month-label{position:static;margin-bottom:16px;}
+    .nav-inner{padding:16px 20px;}
+    .hero{padding:56px 20px 32px;}
+    .timeline-wrap{padding:16px 20px 64px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Towards&nbsp;1B&nbsp;Robots</a>
+    <nav>
+      <a href="/" >The Thesis</a>
+      <a href="/updates" class="active">Updates</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">The Changelog</div>
+    <h1>Updates</h1>
+    <p class="hero-sub">We revise this thesis in public. Every week the three of us add what we learned — from the field, from the market, from being wrong. Each change is dated, attributed, and kept on the record.</p>
+  </div>
+</section>
+
+<section class="timeline-wrap" id="timeline">
+  <!-- injected by build script -->
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-title">Towards 1B Robots</div>
+    <div class="footer-meta">Updated weekly&nbsp;·&nbsp;<a href="/">Back to the thesis</a></div>
+  </div>
+</footer>
+
+<script>
+(async () => {
+  const container = document.getElementById('timeline');
+  let data;
+  try {
+    const res = await fetch('/changelog.json');
+    data = await res.json();
+  } catch(e) {
+    container.innerHTML = '<div class="empty-state"><p>No updates yet. Check back soon.</p></div>';
+    return;
+  }
+
+  const entries = (data.entries || []).slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (!entries.length) {
+    container.innerHTML = '<div class="empty-state"><p>No updates yet. Check back soon.</p></div>';
+    return;
+  }
+
+  // Group by month
+  const months = {};
+  for (const e of entries) {
+    const d = new Date(e.date);
+    const key = d.toLocaleString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+    if (!months[key]) months[key] = [];
+    months[key].push(e);
+  }
+
+  const dotClass = (i) => i === 0 ? 'dot-red' : (i % 3 === 0 ? 'dot-dark' : 'dot-tan');
+
+  let html = '';
+  let globalIdx = 0;
+  for (const [month, mes] of Object.entries(months)) {
+    html += `<div class="month-group">
+      <div class="month-label-col"><div class="month-label">${month}</div></div>
+      <div class="entries">`;
+    for (const e of mes) {
+      const d = new Date(e.date);
+      const dateStr = d.toLocaleString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+      const badge = e.badge ? `<span class="entry-badge">${e.badge}</span>` : '';
+      html += `<div class="entry">
+        <span class="dot ${dotClass(globalIdx)}"></span>
+        <div class="entry-meta">
+          <span class="entry-date">${dateStr}</span>
+          <span class="entry-author">${e.author}</span>
+          ${badge}
+        </div>
+        <p class="entry-body">${e.body}</p>
+      </div>`;
+      globalIdx++;
+    }
+    html += `</div></div>`;
+  }
+  container.innerHTML = html;
+})();
+</script>
+
+</body>
+</html>
