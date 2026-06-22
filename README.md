@@ -1,6 +1,6 @@
 # abillionrobots.com
 
-Living changelog for the "Towards 1B Robots" thesis by Ethan Aldrich, Erikson Kuebler, and Raymond Xu.
+Living changelog for the "A Billion Robots" thesis by Ethan Aldrich, Erikson Kuebler, and Raymond Xu.
 
 ## Structure
 
