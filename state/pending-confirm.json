@@ -5,27 +5,7 @@
     {
       "date": "2026-06-23",
       "author": "Ethan",
-      "body": "T800 being used in robot fights in NYC \u2014 Eugene is the guy running it."
-    },
-    {
-      "date": "2026-06-23",
-      "author": "Erik",
-      "body": "Robotics companies are increasingly adopting off-the-shelf batteries (DeWalt, etc.) rather than building custom power systems. Creates real tailwinds for industrial battery stocks. BorgWarner is one to watch."
-    },
-    {
-      "date": "2026-06-24",
-      "author": "Ethan",
-      "body": "LITA is a hotel robotics rollup focused on operational efficiency. Currently evaluating a Miami hotel deployment. Interesting signal for physical AI adoption in hospitality."
-    },
-    {
-      "date": "2026-06-24",
-      "author": "Raymond",
-      "body": "Tracking Automate 2026. Generalist robot demos were the dominant conversation \u2014 generalism is becoming the core narrative in industrial robotics, not task-specific hardware."
-    },
-    {
-      "date": "2026-06-25",
-      "author": "Ethan",
-      "body": "Cardinal Robotics \u2014 a close contact closed a FANUC deal to finance their RaaS model. Robotics-as-a-service is getting real traction with institutional backing."
+      "body": "LITA is trying to bring robotics to hotels to improve operational efficiency \u2014 currently evaluating a Miami hotel deployment. Watch this space. Also: T800 being used in a robot fight out of NYC (Eugene's crew)."
     },
     {
       "date": "2026-06-25",
@@ -33,14 +13,14 @@
       "body": "Exploring ideas around micron-scale robot memory. Details incoming."
     },
     {
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "author": "Ethan",
-      "body": "Chinese manufacturing is structurally difficult for foreign companies to own. The winning move is to be structured as a Chinese entity with an American subsidiary as the public face. Several companies are doing this quietly."
+      "body": "Two signals: (1) Hard for non-Chinese companies to do large manufacturing contracts with Chinese factories \u2014 better to be structured as a Chinese entity if you want to own that supply chain. Some companies run American subs as the public face while keeping China-side ops Chinese-owned. (2) Thinking about cyber security for robots and FedRAMP \u2014 robotics cos don't want to build compliance layers themselves, which creates a wrapper/incubation opportunity for whoever does. That wrapper owns US market access for foreign hardware."
     },
     {
       "date": "2026-06-26",
-      "author": "Ethan",
-      "body": "FedRAMP and cyber compliance for robots is an open problem nobody wants to solve themselves. Whoever builds the certification wrapper layer controls US market access for foreign hardware. Classic infrastructure play."
+      "author": "Erik",
+      "body": "Cyber layer + US market safety is an incubation opportunity. Robotics companies don't want to spend on compliance or certification \u2014 whoever builds the wrapper controls access to the US market for foreign hardware."
     }
   ],
   "confirmations": {
