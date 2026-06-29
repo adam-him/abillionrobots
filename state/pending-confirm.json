@@ -1,11 +1,27 @@
 {
-  "week": null,
+  "week": "2026-26",
   "rollup": null,
-  "entries": [],
+  "entries": [
+    {
+      "date": "2026-06-23",
+      "author": "Ethan",
+      "body": "LITA is trying to bring robotics to hotels to improve operational efficiency \u2014 currently evaluating a Miami hotel deployment. Watch this space. Also: T800 being used in a robot fight out of NYC (Eugene's crew)."
+    },
+    {
+      "date": "2026-06-25",
+      "author": "Raymond",
+      "body": "Exploring ideas around micron-scale robot memory. Details incoming."
+    },
+    {
+      "date": "2026-06-26",
+      "author": "Erik",
+      "body": "Two observations: (1) Hard for non-Chinese companies to do large manufacturing contracts with Chinese factories \u2014 better to be structured as a Chinese entity if you want to own that supply chain. Some companies are solving this with American subsidiaries as the public face while keeping China-side ops Chinese-owned. (2) Robotics companies don't want to spend on cyber compliance or US safety certification \u2014 this is an incubation opportunity. Whoever builds the cyber/compliance wrapper layer owns access to the US market for foreign robot hardware."
+    }
+  ],
   "confirmations": {
-    "ethan": false,
-    "erik": false,
-    "raymond": false
+    "ethan": true,
+    "erik": true,
+    "raymond": true
   },
-  "published": false
+  "published": true
 }
