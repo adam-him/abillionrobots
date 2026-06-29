@@ -14,8 +14,13 @@
     },
     {
       "date": "2026-06-26",
+      "author": "Ethan",
+      "body": "Two signals: (1) Hard for non-Chinese companies to do large manufacturing contracts with Chinese factories \u2014 better to be structured as a Chinese entity if you want to own that supply chain. Some companies run American subs as the public face while keeping China-side ops Chinese-owned. (2) Thinking about cyber security for robots and FedRAMP \u2014 robotics cos don't want to build compliance layers themselves, which creates a wrapper/incubation opportunity for whoever does. That wrapper owns US market access for foreign hardware."
+    },
+    {
+      "date": "2026-06-26",
       "author": "Erik",
-      "body": "Two observations: (1) Hard for non-Chinese companies to do large manufacturing contracts with Chinese factories \u2014 better to be structured as a Chinese entity if you want to own that supply chain. Some companies are solving this with American subsidiaries as the public face while keeping China-side ops Chinese-owned. (2) Robotics companies don't want to spend on cyber compliance or US safety certification \u2014 this is an incubation opportunity. Whoever builds the cyber/compliance wrapper layer owns access to the US market for foreign robot hardware."
+      "body": "Cyber layer + US market safety is an incubation opportunity. Robotics companies don't want to spend on compliance or certification \u2014 whoever builds the wrapper controls access to the US market for foreign hardware."
     }
   ],
   "confirmations": {
