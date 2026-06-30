@@ -151,11 +151,12 @@
       const d = new Date(e.date);
       const dateStr = d.toLocaleString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
       const badge = e.badge ? `<span class="entry-badge">${e.badge}</span>` : '';
+      const authorHtml = e.author ? `<span class="entry-author">${e.author}</span>` : '';
       html += `<div class="entry">
         <span class="dot ${dotClass(globalIdx)}"></span>
         <div class="entry-meta">
           <span class="entry-date">${dateStr}</span>
-          <span class="entry-author">${e.author}</span>
+          ${authorHtml}
           ${badge}
         </div>
         <p class="entry-body">${e.body}</p>

@@ -2,35 +2,28 @@
   "entries": [
     {
       "date": "2026-06-26",
-      "body": "FedRAMP + cyber compliance for robots is an open problem nobody wants to solve in-house. Whoever builds the certification wrapper controls US market access for foreign hardware. Classic infrastructure play."
+      "author": "",
+      "body": "<strong>The US market access problem for foreign robot hardware is unsolved and wide open.</strong> Robotics companies don't want to build their own cyber compliance and FedRAMP certification stack. Whoever builds the wrapper layer — handles the compliance, certifies the hardware — controls the bottleneck into the US market. Classic infrastructure play hiding in plain sight."
     },
     {
       "date": "2026-06-25",
-      "body": "Non-Chinese companies struggle to own large Chinese factory relationships at scale — the winning structure is a Chinese-owned entity with an American subsidiary as the public face. Some are quietly running this playbook."
+      "author": "",
+      "body": "<strong>Structuring matters as much as building for China supply chain access.</strong> Foreign companies can't easily own their manufacturing relationships in China. The structural play is a Chinese entity with a US subsidiary as the public face — several operators are doing this quietly."
     },
     {
       "date": "2026-06-25",
-      "body": "A robotics company closed a FANUC deal to finance their robotics-as-a-service model. RaaS is starting to attract real institutional capital."
-    },
-    {
-      "date": "2026-06-25",
-      "body": "Exploring ideas around micron-scale robot memory. Details incoming."
+      "author": "",
+      "body": "<strong>RaaS is getting institutional traction.</strong> A fund is actively financing Fanuc deployments on a robotics-as-a-service model. The financing layer is maturing — this is no longer just hardware sales."
     },
     {
       "date": "2026-06-24",
-      "body": "Generalist robot demos dominated Automate 2026. Generalism is becoming the core narrative in industrial robotics — not task-specific hardware."
-    },
-    {
-      "date": "2026-06-24",
-      "body": "A hotel robotics company is evaluating a Miami deployment to improve operational efficiency. Watch this space."
+      "author": "",
+      "body": "<strong>Hotel operators are becoming early robotics adopters.</strong> One rollup focused on hotel operational efficiency is already in active deployment conversations with a Miami property. Physical AI is finding PMF in hospitality before most people expect it."
     },
     {
       "date": "2026-06-23",
-      "body": "Robotics companies are increasingly adopting off-the-shelf batteries (DeWalt, etc.) over custom power systems. Tailwinds for industrial battery suppliers — BorgWarner one to watch."
-    },
-    {
-      "date": "2026-06-23",
-      "body": "T800 being used in robot fights out of NYC."
+      "author": "",
+      "body": "<strong>Off-the-shelf batteries are becoming the default power stack for humanoid robots.</strong> Companies are increasingly skipping custom power systems and pulling from commodity industrial suppliers. Creates real tailwinds for battery stocks — particularly in the industrial segment."
     }
   ]
 }
